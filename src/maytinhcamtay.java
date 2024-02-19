@@ -50,9 +50,11 @@ public class maytinhcamtay extends JFrame {
         btnNewButton_2_1.setBounds(49, 111, 195, 57);
         contentPane.add(btnNewButton_2_1);
 
-        JButton btnNewButton_2_1_1_1 = new JButton("hàm trigonometric");
+        JButton btnNewButton_2_1_1_1 = new JButton("hàm luonggiac");
         btnNewButton_2_1_1_1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                luonggiac calculator = new luonggiac();
+                calculator.setVisible(true);
             }
         });
         btnNewButton_2_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -60,6 +62,12 @@ public class maytinhcamtay extends JFrame {
         contentPane.add(btnNewButton_2_1_1_1);
 
         JButton btnNewButton_2_1_1_1_1 = new JButton("Số phức");
+        btnNewButton_2_1_1_1_1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                pheptinhsophuc calculator = new pheptinhsophuc();
+                calculator.setVisible(true);
+            }
+        });
         btnNewButton_2_1_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 21));
         btnNewButton_2_1_1_1_1.setBounds(523, 195, 141, 57);
         contentPane.add(btnNewButton_2_1_1_1_1);
