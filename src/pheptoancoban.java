@@ -110,7 +110,7 @@ mainPanel.add(btnchia);
                     result = a * b;
                     break;
                 case "chia":
-                    if(b!= 0){
+                    if(b == 0){
                         resultArea.setText("Answer: Vô nghiệm ");
                         return;
                     }else{
