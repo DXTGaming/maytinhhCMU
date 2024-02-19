@@ -70,7 +70,15 @@ public class pheptoancoban extends JFrame {
                 performOperation("chia");
             }
         });
-     
+        btnchia = new JButton("Phép Chia");
+btnchia.addActionListener(new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        performOperation("chia");
+    }
+});
+btnchia.setBounds(300, 180, 80, 25);  // Adjust the bounds as needed
+mainPanel.add(btnchia);
 
         btnExit = new JButton("Exit");
         btnExit.addActionListener(new ActionListener() {
@@ -102,8 +110,13 @@ public class pheptoancoban extends JFrame {
                     result = a * b;
                     break;
                 case "chia":
-             
+                    if(b!= 0){
+                        resultArea.setText("Answer: Vô nghiệm ");
+                        return;
+                    }else{
                         result = a / b;
+                    } 
+                    break;
                    
             }
 
